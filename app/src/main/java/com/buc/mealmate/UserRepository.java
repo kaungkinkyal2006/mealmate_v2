@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 public class UserRepository {
     private static final String PREFS_NAME = "MealMateUsers";
-    private SharedPreferences sharedPreferences;
+    private final SharedPreferences sharedPreferences;
 
     public UserRepository(Context context) {
         sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);

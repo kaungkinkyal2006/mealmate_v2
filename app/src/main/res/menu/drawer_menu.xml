@@ -4,6 +4,5 @@
     <!-- Add Logout menu item -->
     <item
         android:id="@+id/nav_logout"
-        android:title="Log Out"
-        />  <!-- Use any logout icon you have -->
+        android:title="Log Out" />  <!-- Use any logout icon you have -->
 </menu>

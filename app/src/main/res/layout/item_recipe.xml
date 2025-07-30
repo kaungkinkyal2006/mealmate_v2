@@ -13,7 +13,7 @@
         android:orientation="horizontal"
         android:padding="16dp"
         android:gravity="center_vertical"
-        android:background="@android:color/transparent" >  <!-- Remove background here -->
+        android:background="@android:color/transparent">  <!-- Remove background here -->
 
         <!-- Recipe Name -->
         <TextView

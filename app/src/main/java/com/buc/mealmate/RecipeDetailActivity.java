@@ -28,7 +28,7 @@ public class RecipeDetailActivity extends AppCompatActivity {
     private ActivityRecipeDetailBinding binding;
     private AppDatabase db;
     private Recipe recipe;
-    private List<CheckBox> ingredientCheckboxes = new ArrayList<>();
+    private final List<CheckBox> ingredientCheckboxes = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +94,7 @@ public class RecipeDetailActivity extends AppCompatActivity {
         container.removeAllViews();
         ingredientCheckboxes.clear();
 
-        List<String> allIngredients = Arrays.asList(recipe.ingredients.split(","));
+        String[] allIngredients = recipe.ingredients.split(",");
         List<String> purchased = recipe.purchasedIngredients == null ?
                 new ArrayList<>() :
                 Arrays.asList(recipe.purchasedIngredients.split(","));

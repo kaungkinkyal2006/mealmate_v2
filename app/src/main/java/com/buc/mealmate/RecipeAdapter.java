@@ -20,12 +20,12 @@ import java.util.Set;
 
 public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder> {
 
-    private Context context;
+    private final Context context;
     private List<Recipe> recipes;
-    private OnRecipeDeleteListener deleteListener;
+    private final OnRecipeDeleteListener deleteListener;
 
     // Track selected positions for multi-selection
-    private Set<Integer> selectedPositions = new HashSet<>();
+    private final Set<Integer> selectedPositions = new HashSet<>();
 
     // Flag to control checkbox visibility
     private boolean selectionMode = false;
@@ -33,6 +33,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
     // Interface for delete callback
     public interface OnRecipeDeleteListener {
         void onRecipeDelete(Recipe recipe);
+
         void onDeleteClicked(Recipe recipe);
     }
 
@@ -141,8 +142,8 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
 
     // Nested IngredientAdapter
     public static class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.ViewHolder> {
-        private List<String> ingredients;
-        private OnIngredientDeleteListener deleteListener;
+        private final List<String> ingredients;
+        private final OnIngredientDeleteListener deleteListener;
 
         public interface OnIngredientDeleteListener {
             void onIngredientDelete(int position);

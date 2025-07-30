@@ -26,6 +26,7 @@
         android:hint="Username"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         app:boxBackgroundMode="none">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
@@ -43,6 +44,7 @@
         app:passwordToggleEnabled="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         app:boxBackgroundMode="none">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
@@ -63,5 +65,5 @@
         app:cornerRadius="28dp"
         app:elevation="6dp"
         android:textAllCaps="false"
-        android:padding="12dp"/>
+        android:padding="12dp" />
 </LinearLayout>

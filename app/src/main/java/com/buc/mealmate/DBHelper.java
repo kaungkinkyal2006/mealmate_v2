@@ -6,6 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -114,14 +115,14 @@ public class DBHelper extends SQLiteOpenHelper {
                 new String[]{COL_TITLE, COL_INGREDIENTS, COL_INSTRUCTIONS},
                 null, null, null, null, null);
 
-        if(cursor.moveToFirst()){
+        if (cursor.moveToFirst()) {
             do {
                 String title = cursor.getString(0);
                 String ingredients = cursor.getString(1);
                 String instructions = cursor.getString(2);
                 String recipeStr = "Recipe: " + title + "\nIngredients: " + ingredients + "\nInstructions: " + instructions;
                 recipesList.add(recipeStr);
-            } while(cursor.moveToNext());
+            } while (cursor.moveToNext());
         }
         cursor.close();
         return recipesList;

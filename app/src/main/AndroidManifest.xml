@@ -29,7 +29,8 @@
         android:theme="@style/Theme.MealMate">
 
         <!-- Launcher Activities -->
-        <activity android:name=".LauncherActivity"
+        <activity
+            android:name=".LauncherActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +38,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true" />
 
         <!-- Other Activities -->
