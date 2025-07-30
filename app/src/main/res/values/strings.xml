@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="app_name">Meal Mate</string>
+</resources>

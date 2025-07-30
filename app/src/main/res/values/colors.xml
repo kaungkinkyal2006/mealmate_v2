@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Theme Colors -->
+    <color name="primaryCoral">#212121</color>
+    <color name="primaryOrangeDark">#FFA500</color>     <!-- Orange -->
+    <color name="primaryOrangeLight">#FFBB33</color>    <!-- Lighter Orange -->
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="grayLight">#F5F5F5</color>
+    <color name="red">#FF6F61</color>FF6F61
+</resources>

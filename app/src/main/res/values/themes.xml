@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Unified app theme -->
+    <style name="Theme.MealMate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/primaryCoral</item>
+        <item name="colorPrimaryVariant">@color/primaryOrangeDark</item>
+        <item name="colorSecondary">@color/primaryOrangeLight</item>
+
+        <!-- Status bar and navigation bar -->
+        <item name="android:statusBarColor">@color/primaryOrangeDark</item>
+        <item name="android:navigationBarColor">@color/primaryOrangeDark</item>
+
+        <!-- Optional: Make status bar icons dark if background is light -->
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Accent color for older APIs -->
+        <item name="colorAccent">@color/primaryOrangeLight</item>
+    </style>
+</resources>

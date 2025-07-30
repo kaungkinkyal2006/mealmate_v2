@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <!-- Ingredient Name -->
+    <TextView
+        android:id="@+id/tvIngredient"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#222"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <!-- Delete Button -->
+    <ImageButton
+        android:id="@+id/btnDeleteIngredient"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Delete ingredient"
+        android:src="@drawable/delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        app:tint="#E53935" />
+</LinearLayout>
